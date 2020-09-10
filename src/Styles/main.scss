@@ -1,3 +1,92 @@
-.App {
-    color: crimson;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    .card {
+        width: 28%;
+        height: 70%;
+        border: 2px solid gray;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4);
+
+        .logo-container {
+            padding-top: 17px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.form-login {
+    margin-top: 17px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    width: 60%;
+    margin: 9px 0;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: skyblue;
+    transition: .2s ease;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: lightblue;
+    color: whitesmoke;
+}
+
+input[type="text"],
+input[type="password"] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    transition: .2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom-color: rgb(11, 115, 241);
+}
+
+.username-container,
+.password-container {
+    margin: 8px 0;
+    width: 60%;
 }
